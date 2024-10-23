@@ -43,8 +43,8 @@ df_mature.to_csv(os.path.join(script_directory, f"{line_name}_2gg_mature.csv"), 
 
 df_full = pd.read_csv(os.path.join(script_directory,'raw_counts_named_sequences.csv'))
 df_prec = pd.read_csv(os.path.join(script_directory,f"{line_name}_precursors.csv"))
-df_star2 = pd.read_csv(os.path.join(script_directory,f"{line_name}_2gg_star.csv"))
-df_mature2 = pd.read_csv(os.path.join(script_directory,f"{line_name}_2gg_mature.csv"))
+df_star2 = pd.read_csv(os.path.join(script_directory,f"{line_name}_star.csv"))
+df_mature2 = pd.read_csv(os.path.join(script_directory,f"{line_name}_mature.csv"))
 
 df_combined = pd.concat([df_full, df_mature2], axis=1)
 df_combined = pd.concat([df_combined, df_star2], axis=1)
