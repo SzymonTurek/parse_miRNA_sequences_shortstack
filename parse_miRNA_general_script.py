@@ -38,8 +38,8 @@ df_mature.rename(columns={'Sequence_ID': 'Cluster', 'Sequence': 'Mature_sequence
 f"{line_name}_results.txt"
 
 df_precursor.to_csv(os.path.join(script_directory, f"{line_name}_precursors.csv"), index=False)
-df_star.to_csv(os.path.join(script_directory, f"{line_name}_2gg_star.csv"), index=False)
-df_mature.to_csv(os.path.join(script_directory, f"{line_name}_2gg_mature.csv"), index=False)
+df_star.to_csv(os.path.join(script_directory, f"{line_name}_star.csv"), index=False)
+df_mature.to_csv(os.path.join(script_directory, f"{line_name}_mature.csv"), index=False)
 
 df_full = pd.read_csv(os.path.join(script_directory,'raw_counts_named_sequences.csv'))
 df_prec = pd.read_csv(os.path.join(script_directory,f"{line_name}_precursors.csv"))
