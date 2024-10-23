@@ -4,4 +4,3 @@ Aby uruchomic skrypt nalezy posiadac zainstalowany biopython.
 conda activate aligners <- moje srodowisko z zainstalowana conda
 python3 parse_miRNA_general_script.py mir.fasta "2gg"
 
-
